@@ -11,51 +11,64 @@
         <link rel="shortcut icon" href="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" type="image/x-icon">
         <title>Formulario</title>
     </head>
-    <body class="mt-3">
-        <div class="titulo">
-            <h2 class="text-center text-white">Ingreso de Datos</h2>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center align-items-center mt-5">
-                <form class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 shadow-lg py-3 px-4 bg-light rounded-3">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input your name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Input your last name" required>
-                    </div>
-                    <div class="my-2">
-                        <p>Genre</p>
-                        <div class="d-flex flex-column align-items-center flex-sm-row justify-content-sm-around">
-                            <div class="form-check mb-2 sm:mb-0">
-                                <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Masculino
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Femenino
-                                </label>
+    <body>
+        <main class="mt-3">
+            <div class="titulo">
+                <h2 class="text-center text-white">Data entry</h2>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center mt-3">
+                    <form class="py-3 px-4 my-3 bg-light rounded-3 col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Input your name" required autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Input your last name" required>
+                        </div>
+                        <div class="my-2">
+                            <p>Genre</p>
+                            <div class="d-flex flex-column align-items-center flex-sm-row justify-content-sm-around">
+                                <div class="form-check mb-2 sm:mb-0">
+                                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Masculino
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Femenino
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput3" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Input your email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput4" placeholder="Input your password" required>
-                    </div>
-                    <div class="mb-3 text-center">
-                        <button class="btn btn-primary btnSendForm">Send</button>
-                    </div>
-                </form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Height</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="Input your height" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput4" class="form-label">Weight</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Input your Weight" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput5" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput5" placeholder="Input your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput6" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput6" placeholder="Input your password" required>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button type="submit" class="btn btn-primary btnSendForm">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
+            <div id="table_div" class="mb-3 mx-3 text-center"></div>
+        </main>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
